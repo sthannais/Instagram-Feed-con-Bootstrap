@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https: //fonts.googleapis.com/css2? family= Roboto:wght@100 & display=swap" rel="stylesheet"></link>
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
+    <title>Instagram Feed con Bootstrap</title>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-md-12">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <div class="col-md-1"></div>
+            <div class="col-md-7">
+              <i class="fa-brands fa-instagram"></i>
+              <a class="navbar-brand" href="#">Instagram</a>
+            </div>
+            <div class="col-md-auto">
+              <button
+                type="button"
+                class="btn btn-success"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                data-bs-whatever="@mdo"
+              >
+                Create a now post
+              </button>
+            <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <form>
+                        <div class="mb-3">
+                          <textarea
+                            class="form-control"
+                            id="message-text"
+                          ></textarea>
+                        </div>
+                        <i style="font-size: 24px" class="fas">&#xf030;</i>
+                        <i style="font-size: 24px" class="fas">&#xf3c5;</i>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-light border border-dark"
+                        data-bs-dismiss="modal"
+                      >
+                        Cancel
+                      </button>
+                      <button type="button" class="btn btn-success">
+                        Publish
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i class="fa-solid fa-gear"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Log Out</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="col-md-5"></li>
+      <li class="nav-item col-md-auto" role="presentation">
+        <button
+          class="nav-link"
+          id="carrusel-1-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#carrusel-1"
+          type="button"
+          role="tab"
+          aria-controls="carrusel-1"
+          aria-selected="false"
+        >
+        <i class="fa-solid fa-table-cells"></i>
+        </button>
+      </li>
+      <li class="nav-item col-md-1" role="presentation">
+        <button
+          class="nav-link"
+          id="carrusel-2-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#carrusel-2"
+          type="button"
+          role="tab"
+          aria-controls="carrusel-2"
+          aria-selected="false"
+        >
+        <i class="fa-regular fa-square"></i>
+        </button>
+      </li>
+      <li class="col-md-5"></li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div
+        class="tab-pane fade"
+        id="carrusel-1"
+        role="tabpanel"
+        aria-labelledby="carrusel-1-tab">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4"><img src="./images/komal-g-U806pAOX-cg-unsplash.jpg"></div>
+            <div class="col-md-4"><img src="./images/ali-choubin-mQLS2XfmpZw-unsplash.jpg"></div>
+            <div class="col-md-4"><img class="img_3" src="./images/aly-ko-GHL0mjf0mBA-unsplash.jpg"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-4"><img src="./images/andrew-romanov-aIBz1UWfyE8-unsplash.jpg"></div>
+            <div class="col-md-4"><img src="./images/grafi-jeremiah-q97Xk5GGT4w-unsplash.jpg"></div>
+            <div class="col-md-4"><img class="img_gif" src="./images/gato-digitando.gif"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-4"><img src="./images/mia-de-jesus-ORKSKyKuyEM-unsplash.jpg"></div>
+            <div class="col-md-4"><img src="./images/nati-melnychuk-lj8EXy5ty0A-unsplash.jpg"></div>
+            <div class="col-md-4"><img src="./images/tyler-nix-oulNYsGvHDU-unsplash.jpg"></div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="tab-pane fade"
+        id="carrusel-2"
+        role="tabpanel"
+        aria-labelledby="carrusel-2-tab">
+      <div class="first-div">
+        <div class="flex-container">
+          <div class="title"><h2>My first photo</h2></div>
+          <div class="date">12/14</div>
+          </div>
+          <img class="img2"  src="./images/komal-g-U806pAOX-cg-unsplash.jpg" width="400px" height="322px"/>
+          <p class="pp">
+          <b>23 Likes</b><br>
+          Thi is my first photo of the feed, this is a multi line comment for
+          testing<br/>
+          purposes. I am learning to code with <b>#BreathCode</b>
+          <br>
+          <br>
+          <div class="icons1"><i class="fa-regular fa-heart"></i> comment </div>
+            <div class="icons2"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+          <div class="flex-container">
+              <div class="title"><h2>My second photo</h2></div>
+              <div class="date">12/17</div>
+              </div>
+              <img class="img2"  src="./images/ali-choubin-mQLS2XfmpZw-unsplash.jpg" width="400px" height="322px"/>
+              <p class="pp">
+              <b>23 Likes</b><br>
+              Thi is my first photo of the feed, this is a multi line comment for
+              testing<br/>
+              purposes. I am learning to code with <b>#BreathCode</b>
+              <br>
+              <br>
+              <div class="icons1"><i class="fa-regular fa-heart"></i> comment </div>
+              <div class="icons2"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                <div class="flex-container">
+                  <div class="title"><h2>My third photo</h2></div>
+                  <div class="date">12/20</div>
+                  </div>
+                  <div class="img4"><img class="img5" src="./images/aly-ko-GHL0mjf0mBA-unsplash.jpg"></div>
+                  <p class="pp">
+                  <b>23 Likes</b><br>
+                  Thi is my first photo of the feed, this is a multi line comment for
+                  testing<br/>
+                  purposes. I am learning to code with <b>#BreathCode</b>
+                  <br>
+                  <br>
+                  <div class="icons1"><i class="fa-regular fa-heart"></i> comment </div>
+                    <div class="icons2"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+  <div class="flex-container">
+    <div class="title"><h2>My fourth photo</h2></div>
+      <div class="date">12/24</div>
+  </div>
+    <img class="img2"  src="./images/andrew-romanov-aIBz1UWfyE8-unsplash.jpg" width="400px" height="322px"/>
+      <p class="pp">
+  <b>23 Likes</b><br>
+      Thi is my first photo of the feed, this is a multi line comment for
+  testing<br/>
+    purposes. I am learning to code with <b>#BreathCode</b>
+                      <br>
+                      <br>
+                      <div class="icons1"><i class="fa-regular fa-heart"></i> comment </div>
+                      <div class="icons2"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+
+
+                     <div class="flex-container">
+                      <div class="title"><h2>My fourth photo</h2></div>
+                      <div class="date">12/24</div>
+                      </div>
+                      <img class="img2"  src="./images/grafi-jeremiah-q97Xk5GGT4w-unsplash.jpg" width="400px" height="322px"/>
+                      <p class="pp">
+                      <b>23 Likes</b><br>
+                      Thi is my first photo of the feed, this is a multi line comment for
+                      testing<br/>
+                      purposes. I am learning to code with <b>#BreathCode</b>
+                      <br>
+                      <br>
+                      <div class="icons1"><i class="fa-regular fa-heart"></i> comment </div>
+                      <div class="icons2"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+
+                      <div class="flex-container">
+                        <div class="title"><h2>My fourth photo</h2></div>
+                        <div class="date">12/24</div>
+                        </div>
+                        <div class="img6"><img src="./images/gato-digitando.gif"></div>
+                        <p class="pp">
+                        <b>23 Likes</b><br>
+                        Thi is my first photo of the feed, this is a multi line comment for
+                        testing<br/>
+                        purposes. I am learning to code with <b>#BreathCode</b>
+                        <br>
+                        <br>
+                        <div class="icons1"><i class="fa-regular fa-heart"></i> comment </div>
+                        <div class="icons2"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+
+        <div class="flex-container">
+          <div class="title"><h2>My fifth photo</h2></div>
+        <div class="date">12/24</div>
+    </div>
+      <img class="img2"  src="./images/mia-de-jesus-ORKSKyKuyEM-unsplash.jpg" width="400px" height="322px"/>
+          <p class="pp">
+          <b>23 Likes</b><br>
+          Thi is my first photo of the feed, this is a multi line comment for
+          testing<br/>
+        purposes. I am learning to code with <b>#BreathCode</b>
+        <br>
+        <br>
+          <div class="icons1"><i class="fa-regular fa-heart"></i> comment </div>
+        <div class="icons2"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+          <div class="flex-container">
+        <div class="title"><h2>My fifth photo</h2></div>
+    <div class="date">12/24</div>
+      </div>
+      <img class="img2"  src="./images/nati-melnychuk-lj8EXy5ty0A-unsplash.jpg" width="400px" height="322px"/>
+      <p class="pp">
+      <b>23 Likes</b><br>
+        Thi is my first photo of the feed, this is a multi line comment for
+      testing<br/>
+      purposes. I am learning to code with <b>#BreathCode</b>
+        <br>
+        <br>
+      <div class="icons1"><i class="fa-regular fa-heart"></i> comment </div>
+    <div class="icons2"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+          <div class="flex-container">
+          <div class="title"><h2>My fifth photo</h2></div>
+        <div class="date">12/24</div>
+        </div>
+      <img class="img2"  src="./images/tyler-nix-oulNYsGvHDU-unsplash.jpg" width="400px" height="322px"/>
+    <p class="pp">
+    <b>23 Likes</b><br>
+          Thi is my first photo of the feed, this is a multi line comment for
+         testing<br/>
+          purposes. I am learning to code with <b>#BreathCode</b>
+          <br>
+          <br>
+        <div class="icons1"><i class="fa-regular fa-heart"></i> comment </div>
+      <div class="icons2"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
